@@ -24,13 +24,15 @@ eCAR Objects include:
  * shell - 
  * otherobj - catchall for uncategorized activities
  
-eCAR Actions include: 
-| add | create | clear | close | delete |
-| edit | end | load| message | modify |
-| open | pause | read | remote_create | remove |
-| start | stop | suspend | terminate | timestomp | 
-| unload | write | interactive | local | login | 
-| logout | rdp | reconnect | rempte | unlock |
-| heartbeat | info | invoke | request| response | 
-| operation | rename | receive | grant | renew |
-| command | otheract |   |   |    |
+eCAR Actions include:   
+| add | create | clear | close | delete |  
+| edit | end | load| message | modify |  
+| open | pause | read | remote_create | remove |  
+| start | stop | suspend | terminate | timestomp |   
+| unload | write | interactive | local | login |   
+| logout | rdp | reconnect | rempte | unlock |    
+| heartbeat | info | invoke | request| response |    
+| operation | rename | receive | grant | renew |  
+| command | otheract |   |   |    |  
+
+
