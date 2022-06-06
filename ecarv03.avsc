@@ -1,0 +1,58 @@
+{
+  "type" : "record",
+  "name" : "Event",
+  "namespace" : "com.fivedirections.schema.avro.ecar.v0_3",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : {
+      "type" : "long",
+      "logicalType" : "timestamp-millis"
+    }
+  }, {
+    "name" : "id",
+    "type" : "string"
+  }, {
+    "name" : "hostname",
+    "type" : "string"
+  }, {
+    "name" : "objectID",
+    "type" : "string"
+  }, {
+    "name" : "object",
+    "type" : {
+      "type" : "enum",
+      "name" : "Object",
+      "symbols" : [ "DRIVER", "FILE", "FLOW", "MODULE", "PROCESS", "REGISTRY", "SERVICE", "THREAD", "USER_SESSION", "HOST", "LOG", "WMI", "SENSOR", "TASK", "TOKEN", "DNS", "SHELL", "OTHEROBJ" ]
+    }
+  }, {
+    "name" : "action",
+    "type" : {
+      "type" : "enum",
+      "name" : "Action",
+      "symbols" : [ "ADD", "CREATE", "CLEAR", "CLOSE", "DELETE", "EDIT", "END", "LOAD", "MESSAGE", "MODIFY", "OPEN", "PAUSE", "READ", "REMOTE_CREATE", "REMOVE", "START", "STOP", "SUSPEND", "TERMINATE", "TIMESTOMP", "UNLOAD", "WRITE", "INTERACTIVE", "LOCAL", "LOCK", "LOGIN", "LOGOUT", "RDP", "RECONNECT", "REMOTE", "UNLOCK", "HEARTBEAT", "INFO", "INVOKE", "REQUEST", "RESPONSE", "OPERATION", "RENAME", "RECEIVE", "GRANT", "RENEW", "COMMAND", "OTHERACT" ]
+    }
+  }, {
+    "name" : "actorID",
+    "type" : "string",
+    "aliases" : [ "processID" ]
+  }, {
+    "name" : "pid",
+    "type" : "int"
+  }, {
+    "name" : "ppid",
+    "type" : "int"
+  }, {
+    "name" : "tid",
+    "type" : "int"
+  }, {
+    "name" : "principal",
+    "type" : "string",
+    "aliases" : [ "username" ]
+  }, {
+    "name" : "properties",
+    "type" : {
+      "type" : "map",
+      "values" : "string"
+    }
+  } ]
+}
